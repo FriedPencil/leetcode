@@ -10,6 +10,10 @@
 因为 nums[0] + nums[1] = 2 + 7 = 9
 所以返回 [0, 1]
 */
+
+/*思路
+将数组中的每个数逐一加入HashMap,加入前检验目标值与加入值的差是否已存在，如果存在，这对应值与加入值就是我们要的答案
+*/
 class Solution {
     public int[] twoSum(int[] nums, int target) {
         HashMap<Integer,Integer> map = new HashMap<Integer,Integer>();
@@ -24,3 +28,4 @@ class Solution {
         return new int[] {};
     }
 }
+
