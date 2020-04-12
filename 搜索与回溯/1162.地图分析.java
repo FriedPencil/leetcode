@@ -62,7 +62,7 @@ class Solution {
                 if(x >= 0 && x < grid.length && y >=0 && y < grid[0].length){
                     if(grid[x][y] == 0 && visited[x][y] == 0) {
                         queue.offer(new Position(x,y));  
-                        visited[x][y] = visited[p.x][p.y]+1;
+                        visited[x][y] = visited[p.x][p.y]+1; // ¹Ø¼ü
                     }    
                 }
             }
