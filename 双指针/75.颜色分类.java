@@ -20,7 +20,7 @@
 class Solution {
     public void sortColors(int[] nums) {
         int low = 0,high = nums.length-1, index = 0;
-        while(index <= high){
+        while(index <= high){ //等于号记得
             if(nums[index] == 2){ //这里不用给index加1
                 swap(nums,index,high);
                 high--;

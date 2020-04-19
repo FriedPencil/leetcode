@@ -20,7 +20,7 @@ class Solution {
         ListNode temp = head;
         int bit = 0, carry = 0;
         while(l1 != null && l2 != null){
-            int sum = l1.val + l2.val + carry;
+            int sum = l1.val + l2.val + carry; //这里可以判断链表是否为null，如果是null就加0，这样可以不用后面的第二个循环操作，可见445题
             bit = sum % 10;
             temp.next = new ListNode(bit);
             carry = sum / 10;

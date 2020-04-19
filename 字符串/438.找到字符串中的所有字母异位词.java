@@ -69,10 +69,10 @@ class Solution {
         while(i < s.length() && j < s.length()){
             char c = s.charAt(j);
             if(hash[c-'a'] == 0){
-                if(i == j){ //用于判断是根本不存在的字符还是存在但个数不符合
+                if(i == j){ //用于判断是根本不存在的字符还是存在但个数不符合，此处为根本不存在
                     i++;
                     j++;
-                }else{
+                }else{ //此处为存在但是个数不符合
                     hash[s.charAt(i)-'a']++;
                     i++;  
                 }
